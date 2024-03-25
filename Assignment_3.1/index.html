@@ -18,24 +18,25 @@
     table {
         border-collapse: collapse;
         margin-top: 20px;
-        background-color: rgb(46, 110, 58);
     }
     .main-heading{
         font-size: 22px;
         color: #ffffff;
         text-align: center;
-        background-color:  rgb(46, 110, 58);
     }
     th, td {
         border: 1px solid #ddd;
         padding: 8px;
-        text-align: center;
+
     }
     th {
         background-color: #f2f2f2;
     }
-    tr:nth-child(even) {
-        background-color: #f9f9f9;
+    th:nth-child(odd), td:nth-child(odd){
+        background-color: rgb(196, 215, 161);
+    }
+    th:nth-child(even), td:nth-child(even) {
+        background-color: rgb(113, 163, 121);
     }
     h1 {
         text-align: center;
@@ -44,7 +45,9 @@
 </head>
 <body>
     <table>
-        <h1 class="main-heading">STUDENTS MARK SHEET</h1>
+        <tr>
+            <th class="main-heading" colspan="2">STUDENTS MARK SHEET</th>
+        </tr>
         <tr>
             <th>Name</th>
             <th>Maths</th>
